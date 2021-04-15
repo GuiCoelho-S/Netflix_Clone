@@ -1,0 +1,86 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+/*Base*/
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman';
+    color:white;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Times New Roman';
+    font-style: bold;
+    font-size: 40px;
+    margin-left:15px;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:#FFF;
+}
+
+/*Série Principal*/
+.container {
+    margin-left: 15px;
+}
+.filme_principal {
+    font-size: 16px;
+    height: 400px;
+    background: url(./../img/background.png);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme_principal .descricao{
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.titulo {
+    margin-top: 3%;
+    font-size:40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.70);
+    border:none;
+    color:white;
+    padding: 12px 18px;
+    outline:none;
+    cursor:pointer;
+    transition: .3s ease all;
+    margin-left:20px;
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+.botao i {
+    margin-right:8px;
+}
+.box_filme{
+    height: 100%;
+    width: 100%;
+    
+    display: block;
+}
+.carrosel_filmes {
+    margin-top:10px;
+}
